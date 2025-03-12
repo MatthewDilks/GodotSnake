@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dobb65io2d1q8"]
+
+[ext_resource type="Script" path="res://Scripts/SnakeSmoothMoveScript.cs" id="1_i4rou"]
+
+[node name="Snake" type="Node2D"]
+script = ExtResource("1_i4rou")
+speed = 300.0
+TurnLimit = 1.1
+turnSpeed = 10.0
