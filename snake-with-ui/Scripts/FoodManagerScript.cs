@@ -78,7 +78,6 @@ public partial class FoodManagerScript : Node2D
 		return b - a;
 	}
 	void onFoodCollision(int index) {
-		// foodItems[index].Position = new Vector2(GD.Randf()*screenSize.X,GD.Randf()*screenSize.Y);
 		spawnFoodItem(new Vector2(
 			(2*GD.Randf()-1)*(screenSize.X-(screenSize.X/2)),
 			(2*GD.Randf()-1)*(screenSize.Y-(screenSize.Y/2))

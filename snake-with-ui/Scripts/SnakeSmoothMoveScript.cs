@@ -114,7 +114,6 @@ public partial class SnakeSmoothMoveScript : Node
 				circles[0].Rotate(turnSpeed * delta);
 			}
 		}
-		
 		circles[0].MoveLocalY(speed*delta);
 	}
 	private Vector2 getHeadDir() {

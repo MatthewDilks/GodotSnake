@@ -40,37 +40,11 @@ public partial class AiSnakeScript : Node
 	void updateSnakeTargets() {
 		List<Vector2> targets = getTargets();
 
-		bool[] kills = new bool[snakes.Count];
 		for (int i = 0; i < snakes.Count; i++) {
 			snakes[i].target = targets[i] - snakes[i].headPos + randVec()*15;
 
 			manager.snakeGrow(snakes[i], manager.getFoodConsumed(snakes[i].headPos));
 
-			if (snakes[i].snakeSelfCollideCheck()) {
-				// snakeNodes[i].QueueFree();
-				// snakes[i].QueueFree();
-				// snakes[i].killSelf();
-				kills[i] = true;
-				
-				snakeNodes[i].QueueFree();
-				// snakeNodes.RemoveAt(i);
-				// snakes.RemoveAt(i);
-
-				// AddSnake();
-			}
-			else {
-				kills[i] = false;
-			}
-		}
-		int counter = 0;
-		for (int i = 0; i < kills.Length; i++) {
-			if (kills[i]) {
-				snakeNodes.RemoveAt(i-counter);
-				// snakes[i].killSelf();
-				snakes.RemoveAt(i-counter);
-				// AddSnake();
-				counter++;
-			}
 		}
 	}
 	List<Vector2> getTargets() {

@@ -34,6 +34,7 @@ public partial class ManagerScript : Node2D
 		if (Input.IsActionJustPressed("quit")) {
 			GetTree().ChangeSceneToFile("control.tscn");
 		}
+		
 		snakeScript.target = getMousePos();
 
 		screenSize = viewport.GetVisibleRect().Size;
