@@ -25,9 +25,6 @@ public partial class Controller : Control
 		GetTree().Quit();
 	}
  	void initNewGame() {
-		// CurrentGame = GameManager.Instantiate();
-  		// addChild(CurrentGame);
-    		// CurrentGameScript = CurrentGame as ManagerScript;
 		GetTree().ChangeSceneToFile("res://Scenes/manager_scene.tscn");
     	}
 }
