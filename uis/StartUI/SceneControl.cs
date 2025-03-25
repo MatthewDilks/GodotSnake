@@ -15,7 +15,7 @@ public partial class SceneControl : Node
 
 	private void OnNextButtonPressed()
 	{
-		GetTree().ChangeSceneToFile(nextScenePath);
+		GetTree().ChangeSceneToFile("res://Scenes/manager_scene.tscn");
 	}
 
 	private void OnQuitButtonPressed()
