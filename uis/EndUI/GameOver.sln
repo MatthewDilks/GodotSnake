@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOver", "GameOver.csproj", "{F41AB31C-97B1-4A15-AD18-50D48779BCDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F41AB31C-97B1-4A15-AD18-50D48779BCDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41AB31C-97B1-4A15-AD18-50D48779BCDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41AB31C-97B1-4A15-AD18-50D48779BCDA}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{F41AB31C-97B1-4A15-AD18-50D48779BCDA}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{F41AB31C-97B1-4A15-AD18-50D48779BCDA}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{F41AB31C-97B1-4A15-AD18-50D48779BCDA}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
