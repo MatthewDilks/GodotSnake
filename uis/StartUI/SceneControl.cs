@@ -2,7 +2,7 @@ using Godot;
 
 public partial class SceneControl : Node
 {
-	[Export] private string nextScenePath = "res://NextScene.tscn"; 
+	[Export] private string nextScenePath = "res://Scenes/manager_scene.tscn"; 
 
 	public override void _Ready()
 	{
