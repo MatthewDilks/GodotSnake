@@ -1,0 +1,111 @@
+[gd_scene load_steps=13 format=3 uid="uid://c04qv1o6e4dlp"]
+
+[ext_resource type="Script" path="res://SceneControl.cs" id="1_4flgp"]
+[ext_resource type="Texture2D" uid="uid://bc6hhpsxn332e" path="res://pixel-art-forest-background-seamless-600nw-2501937379.webp" id="1_r3880"]
+[ext_resource type="FontFile" uid="uid://c47jigiv3v14f" path="res://Funkie Retro.otf" id="2_k6qqf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c0yeg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5n17y"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_28hyh"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjxl1"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7q67s"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8cw1v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6b77l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v6v01"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gypoo"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.853917, 0.853917, 0.853917, 0.6)
+
+[node name="EndScene" type="Node2D"]
+script = ExtResource("1_4flgp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 649.0
+texture = ExtResource("1_r3880")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 491.0
+offset_top = 166.0
+offset_right = 672.0
+offset_bottom = 221.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_k6qqf")
+theme_override_font_sizes/font_size = 40
+text = "Game Over"
+
+[node name="PlayAgain" type="Button" parent="."]
+offset_left = 339.0
+offset_top = 252.0
+offset_right = 835.0
+offset_bottom = 332.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c0yeg")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_5n17y")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_28hyh")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_qjxl1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7q67s")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_8cw1v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6b77l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_v6v01")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gypoo")
+text = "Play Again"
+
+[node name="QuitGame" type="Button" parent="."]
+offset_left = 339.0
+offset_top = 341.0
+offset_right = 835.0
+offset_bottom = 421.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c0yeg")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_5n17y")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_28hyh")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_qjxl1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7q67s")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_8cw1v")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6b77l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_v6v01")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gypoo")
+text = "Quit Game
+"

@@ -32,7 +32,7 @@ public partial class ManagerScript : Node2D
 	public override void _Process(double delta)
 	{
 		if (Input.IsActionJustPressed("quit")) {
-			GetTree().ChangeSceneToFile("control.tscn");
+			GetTree().ChangeSceneToFile("end_scene.tscn");
 		}
 		
 		snakeScript.target = getMousePos();
